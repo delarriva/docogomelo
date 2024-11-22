@@ -1,51 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&
 
-:root {
-    --bg-color: #2E236C;
-    --primary-color: #E49BFF;
-    --secundary-color: #FEFAE0;
-    --font: "Nunito Sans", sans-serif;
+:root{
+    --background-color: hwb(0 0% 100%);
+    --secundary-color: #1100ff;
+    --text-color: #ff0000;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    font-family: var(--font);
-    height: 100vh;
+*{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+html{
+    background-color: var(--background-color);
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    color: var(--text-color);
+}
 
-header {
-    background-color: var(--primary-color);
+.relatorio{
     text-align: center;
-    padding: 1px;
+    padding-top: 20px;
 }
 
-h1{
-    font-size:2rem;
-    color: var(--bg-color);
-    font-weight: 700;
+header{
+    padding-bottom: 20px;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-}
-nav a {
-    text-decoration: none;
-    color: var(--bg-color);
-    margin: 0 2rem 1rem 0;
-    font-size:  1.2rem;
-}
-nav a{
-    text-decoration: underline;
-transform: scale(0.9);
-transition: transform 0.1s;
 
+header, footer{
+    background-color: var(--secundary-color);
 }
-footer{
+
+div{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav__link{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+main{
+    height: 10vh;
+}
+
+footer{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
 }
